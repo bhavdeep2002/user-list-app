@@ -1,0 +1,131 @@
+  body{
+    margin: 0px;
+    background-color: #f5fafa;
+  }
+  .container{  
+    display: flex;
+       margin-left: 2%;
+    margin-right: 2%;
+    gap: 2%;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+        }
+
+.input{
+       width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.form_container{
+    width: 16%;
+    position: relative;
+    height: 450px;
+}
+.my_btn{
+    color: white;
+    background-color: blue;
+    height: 35px;
+    width: 70px;
+    border: 0px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.user_list{
+    width:82%;
+}
+.table{
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+}
+.column{
+    width: 10%;
+}
+.email{
+    width: 20%;
+}
+.action {
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .row {
+    padding-left: 0px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .row {
+    justify-content: space-evenly;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form_container {
+    width: 100%;
+  }
+
+  .user_list {
+    width: 100%;
+  }
+
+  .row_container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .row {
+    justify-content: start;
+    gap: 33px;
+  }
+
+  .email {
+    overflow-wrap: break-word;
+  }
+
+  .action {
+    flex-direction: column;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .row_container {
+    margin-right: 30px;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .row_container {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+
+  .row {
+    justify-content: space-around;
+    gap: 0px;
+  }
+}
+
